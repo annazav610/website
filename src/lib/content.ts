@@ -10,6 +10,7 @@ With over 8 years of experience working with individuals and teams across Europe
   location: 'Amsterdam, Netherlands',
   languages: ['Dutch', 'English'],
   email: 'annazav.efl@gmail.com',
+  calendly: 'https://calendly.com/annazav-efl',
   linkedin: 'https://www.linkedin.com/in/anna-zavalishina/',
   certifications: ['ICF Certified Coach (ACC)', 'CELTA – Cambridge English', 'NLP Practitioner'],
   avatar: '/anya-avatar.jpg',
