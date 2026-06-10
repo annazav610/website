@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect, useTransition } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
@@ -18,7 +18,7 @@ function LanguageSwitcher({ scrolled }: { scrolled: boolean }) {
     });
   };
 
-  const base = scrolled ? 'text-[#1a2e4a]' : 'text-white';
+  const base = scrolled ? 'text-[#3a4858]' : 'text-white';
   const inactive = scrolled ? 'text-gray-300 hover:text-gray-500' : 'text-white/30 hover:text-white/60';
 
   return (
@@ -60,8 +60,8 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className={`text-xl font-bold tracking-tight transition-colors ${scrolled ? 'text-[#1a2e4a]' : 'text-white'}`}>
-            {COACH.name}<span className="text-[#2e9e6b]">.</span>
+          <span className={`text-xl font-bold tracking-tight transition-colors ${scrolled ? 'text-[#3a4858]' : 'text-white'}`}>
+            {COACH.name}<span className="text-[#c07a92]">.</span>
           </span>
         </Link>
 
@@ -71,7 +71,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-[#2e9e6b] ${scrolled ? 'text-[#1a2e4a]' : 'text-white/90'}`}
+              className={`text-sm font-medium transition-colors hover:text-[#c07a92] ${scrolled ? 'text-[#3a4858]' : 'text-white/90'}`}
             >
               {link.label}
             </Link>
@@ -79,7 +79,7 @@ export default function Navbar() {
           <LanguageSwitcher scrolled={scrolled} />
           <Link
             href="/book"
-            className="bg-[#2e9e6b] hover:bg-[#38b27a] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+            className="bg-[#c07a92] hover:bg-[#d494aa] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
           >
             {t('cta')}
           </Link>
@@ -89,7 +89,7 @@ export default function Navbar() {
         <div className="md:hidden flex items-center gap-4">
           <LanguageSwitcher scrolled={scrolled} />
           <button
-            className={`transition-colors ${scrolled ? 'text-[#1a2e4a]' : 'text-white'}`}
+            className={`transition-colors ${scrolled ? 'text-[#3a4858]' : 'text-white'}`}
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -105,7 +105,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-[#1a2e4a] font-medium text-sm py-1"
+              className="text-[#3a4858] font-medium text-sm py-1"
             >
               {link.label}
             </Link>
@@ -113,7 +113,7 @@ export default function Navbar() {
           <Link
             href="/book"
             onClick={() => setOpen(false)}
-            className="bg-[#2e9e6b] text-white text-sm font-semibold px-5 py-2.5 rounded-full text-center"
+            className="bg-[#c07a92] text-white text-sm font-semibold px-5 py-2.5 rounded-full text-center"
           >
             {t('cta')}
           </Link>

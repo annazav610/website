@@ -1,12 +1,12 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 :root {
-  --navy: #1a2e4a;
-  --navy-light: #243d5e;
-  --accent-green: #2e9e6b;
-  --accent-green-light: #38b27a;
+  --navy: #3a4858;
+  --navy-light: #4e5f72;
+  --accent-green: #c07a92;
+  --accent-green-light: #d494aa;
   --accent-orange: #f59e0b;
-  --warm-white: #f8f9fa;
+  --warm-white: #f8f4f5;
 }
 
 html {
@@ -16,5 +16,5 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #ffffff;
-  color: #1a2e4a;
+  color: #3a4858;
 }
